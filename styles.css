@@ -1,0 +1,90 @@
+/* Base settings for overall aesthetics */
+body {
+    font-family: 'Arial', sans-serif; /* Consider integrating a secondary font for variation */
+    background: #EBF0F5; /* Lighter background for a modern look */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling with improved color scheme */
+header {
+    background-color: #009BDF; /* Softer shade of blue for the header */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure header stays on top of other content */
+}
+
+/* Search input styling with interactive elements */
+input#searchInput {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid transparent; /* Improved border for focus state */
+    border-radius: 5px;
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+input#searchInput:focus {
+    border-color: #FFA500; /* Accent color for focus */
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.5); /* Subtle shadow on focus */
+}
+
+/* Main content styling with responsive adjustments */
+main {
+    padding: 80px 20px 20px;
+    margin-top: 100px; /* Adjusted to avoid overlap with the fixed header */
+}
+
+/* Term card styling for a modern look */
+.term {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.term:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+}
+
+.term h2 {
+    margin: 0;
+    color: #333;
+    font-family: 'Open Sans', sans-serif; /* Secondary font for headings */
+}
+
+.term p {
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Footer styling with consistent color scheme */
+footer {
+    text-align: center;
+    background-color: #009BDF; /* Keep the consistent color scheme */
+    color: #fff;
+    padding: 3px; /* Reduced padding for less height */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.5rem; /* Smaller font size for text */
+}
+
+/* Responsive adjustments for better mobile viewing */
+@media (max-width: 768px) {
+    input#searchInput {
+        width: 70%; /* More suitable for smaller screens */
+    }
+    main {
+        padding: 60px 10px; /* Adjust padding for smaller screens */
+    }
+}
